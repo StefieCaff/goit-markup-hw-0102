@@ -5,6 +5,12 @@ ul{
 a{
     text-decoration: none;
 }
+:root{
+    --main-text-color:#212121;
+    --main-font:font-family: 'Roboto', 'sans serif';
+    --hover-focus-color:#2196F3;
+    
+}
 
 .logo{
     font-family: 'Raleway';
@@ -25,10 +31,10 @@ a{
 }
 
 [href^="./"]:hover{
-    color: #2196F3;
+    color: var(--hover-focus-color);
 }
 [href^="./"]:focus{
-    color: #2196F3;
+    color: var( --hover-focus-color);
 }
 
 .contact{
@@ -40,15 +46,15 @@ a{
 
 }
 .contact:focus {
-   color: #2196F3;
+   color: var( --hover-focus-color);
 }
 
 .contact:hover{
-    color: #2196F3;
- } 
+    color: var( --hover-focus-color);
+}
 body{
-    font-family: 'Roboto', 'sans serif';
-    color:#212121;
+    font-family: var(--main-font);
+    color: var(--main-text-color) ;
 }
 
 .hero{
@@ -67,6 +73,7 @@ body{
   
  }
  .hero-button{
+     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -82,7 +89,7 @@ body{
 
  }
  .hero-button:focus{
-     background-color:#188CE8;
+    background-color:#188CE8;
  }
 
  .hero-button:hover{
@@ -143,6 +150,40 @@ body{
     color: #757575;
 }
 
+.nav-button{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+    border: none;
+}
+
+.nav-button:focus{
+    background-color: var(--hover-focus-color);
+}
+
+.nav-button:hover{
+    background-color: var(--hover-focus-color);
+}
+
+.project-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.project-type{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
 .foot{
     width: 1600px;
     height: 252px;
@@ -160,9 +201,9 @@ body{
 }
 
 .address:focus{
-   color: #2196F3
+    color: var(--hover-focus-color);
 }
 
  .address:hover{
-    color: #2196F3
+    color: var(--hover-focus-color);
  }
