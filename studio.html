@@ -4,8 +4,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="WebStudio" content="Effective Sollutions for your Business" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+      :root{
+          font-family: 'Raleway', sans-serif;
+          font-family: 'Roboto', sans-serif;
+          }
+    </style>
     <title>Effective Solutions for your Business</title>
   </head>
 
@@ -37,10 +46,10 @@
     </header>
       
     <main>
-          <section>
+          <section class="hero">
             <div>
-              <h1>Effective Solutions for <br/> your Business</h1>
-              <button class= "request-button" type="button">Request Our Service</button>
+              <h1 class="hero-title">Effective Solutions for <br/> your Business</h1>
+              <button class= "hero-button" type="button">Request Our Service</button>
             </div>
           </section>
 
@@ -69,78 +78,82 @@
             
           <section>
             <div>
-              <h2 class="Do">What we do</h4>
+              <h2 class="do">What we do</h4>
                 <ul>
                   <li>
-                      <img class="do img" src="images/wwdo1.jpg"
+                      <img class="do-img" src="images/wwdo1.jpg"
                       alt="hands working on desktop with design flow chart" width="370" height="294" />
                   </li>
                   <li>
-                      <img class="do img" src="images/wwdo2.jpg"
+                      <img class="do-img" src="images/wwdo2.jpg"
                       alt="hands using smart phone and laptop for UI design" width="370" height="294" />
                   </li>
                   <li>
-                      <img class="do img" src="images/wwdo3.jpg"
+                      <img class="do-img" src="images/wwdo3.jpg"
                       alt="hands using tablet with stylus and color wheel" width="370" height="294" />
                   </li>
                 </ul>
             </div>
           </section>
     
-          <section>
+          <section class="team">
             <div>
-                <h2>Our Team</h2>
+                <h2 class="team-header">Our Team</h2>
                   <ul>
                     <li>
                       <img src="images/product.jpg"
                         alt="Headshot of staff member smiling"
                         width="270"
-                        height="260"/>
-                      <h4>Christopher Walker</h4>
-                      <p>Product Designer</p>
+                        height="260"
+                        class="team-img"/>
+                      <h4 class="team-name">Christopher Walker</h4>
+                      <p class="team-title">Product Designer</p>
                     </li>
                     <li>
                       <img src="images/frontend.jpg" 
                         alt="Headshot of staff member smiling" 
                         width="270" 
-                        height="260" />
-                      <h4>Kylie Evans</h4>
-                      <p>Frontend Developer</p>
+                        height="260"
+                        class="team-img"/>
+                      <h4 class="team-name">Kylie Evans</h4>
+                      <p class="team-title">Frontend Developer</p>
                     </li>
                     <li>
                       <img src="images/marketing.jpg" 
                         alt="Headshot of staff member smiling" 
                         width="270" 
-                        height="260" />
-                      <h4>Ryan Harris</h4>
-                      <p>Marketing</p>
+                        height="260"
+                        class="team-img"/>
+                      <h4 class="team-name">Ryan Harris</h4>
+                      <p class="team-title">Marketing</p>
                     </li>
                     <li>
                       <img src="images/uidesign.jpg" 
                         alt="Headshot of staff member smiling" 
                         width="270" 
-                        height="260" />
-                      <h4>Tyler Moore</h4>
-                      <p>UI Designer</p>
+                        height="260"
+                        class="team-img"/>
+                      <h4 class="team-name">Tyler Moore</h4>
+                      <p class="team-title">UI Designer</p>
                     </li>
                   </ul>
             </div>
           </section>
-
+          
     </main>
 
-    <footer>
+    <footer class="foot">
         <a class="logo" href="index.html">WebStudio</a>
         <address>
         <ul>
         <li>
-             <a href="#">695 Park Ave New York, NY 10065 United States</a>
+             <a class="address" href="#">695 Park Ave New York, NY 10065 United States</a>
           </li>
           <li>
-            <a class="fcontact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a class="fcontact" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+            <a class="contact" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
