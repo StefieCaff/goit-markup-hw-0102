@@ -1,5 +1,6 @@
 ul{
     list-style-type: none;
+    padding: 0%;
 }
     
 a{
@@ -7,8 +8,9 @@ a{
 }
 :root{
     --main-text-color:#212121;
-    --main-font:font-family: 'Roboto', 'sans serif';
+    --main-font:'Roboto', 'sans serif';
     --hover-focus-color:#2196F3;
+    --main-font-size:16px
     
 }
 
@@ -30,28 +32,34 @@ a{
     color: #212121;
 }
 
-[href^="./"]:hover{
+.navbar-current{
     color: var(--hover-focus-color);
 }
-[href^="./"]:focus{
-    color: var( --hover-focus-color);
+
+.navbar:hover{
+    color: var(--hover-focus-color);
 }
 
-.contact{
+.navbar:focus{
+    color: var(--hover-focus-color);
+}
+.h-contact{
+    font-style:normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #757575;
-
-}
-.contact:focus {
-   color: var( --hover-focus-color);
 }
 
-.contact:hover{
-    color: var( --hover-focus-color);
+.h-contact:focus {
+    color: var(--hover-focus-color);
 }
+
+.h-contact:hover{
+    color: var(--hover-focus-color);
+}
+
 body{
     font-family: var(--main-font);
     color: var(--main-text-color) ;
@@ -75,16 +83,13 @@ body{
  .hero-button{
      cursor: pointer;
     font-weight: 700;
-    font-size: 16px;
+    padding: 10px 20px;
     line-height: 30px;
     text-align: center;
+    border-radius: 4px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #2196F3;
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
     border:none;
 
  }
@@ -121,7 +126,7 @@ body{
 }
 
 .team{
-   padding: 200px 0;   
+   padding: 94px 0;   
    background: #F5F4FA;
 }
 
@@ -135,7 +140,6 @@ body{
 
 .team-name{
     font-weight: 500;
-    font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -143,7 +147,6 @@ body{
 
 .team-title{
     font-weight: 400;
-    font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em; 
@@ -153,7 +156,7 @@ body{
 .nav-button{
     cursor: pointer;
     font-weight: 500;
-    font-size: 16px;
+    border-radius: 4px;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -163,10 +166,12 @@ body{
 
 .nav-button:focus{
     background-color: var(--hover-focus-color);
+    color:#FFFFFF;
 }
 
 .nav-button:hover{
     background-color: var(--hover-focus-color);
+    color:#FFFFFF;
 }
 
 .project-title{
@@ -178,32 +183,28 @@ body{
 
 .project-type{
     font-weight: 400;
-    font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
     color: #757575;
 }
 
 .foot{
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
     background: #2F303A;
 }
 
-.address{
+.f-contact{
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.f-contact:focus {
     color: #FFFFFF;
 }
 
-.address:focus{
-    color: var(--hover-focus-color);
+.f-contact:hover{
+    color: #FFFFFF;
 }
-
- .address:hover{
-    color: var(--hover-focus-color);
- }
