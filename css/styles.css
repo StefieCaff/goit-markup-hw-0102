@@ -43,6 +43,7 @@ a{
 .navbar:focus{
     color: var(--hover-focus-color);
 }
+
 .h-contact{
     font-style:normal;
     font-weight: 500;
@@ -153,6 +154,10 @@ body{
     color: #757575;
 }
 
+.nav-button-current{
+    color: white
+}
+
 .nav-button{
     cursor: pointer;
     font-family: 'Roboto';
@@ -161,6 +166,7 @@ body{
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
+    color: #212121;
     background-color: #F5F4FA;
     border: none;
 }
@@ -174,9 +180,6 @@ body{
     background-color: var(--hover-focus-color);
     color:#FFFFFF;
 }
-
-.nav-button-current{
-    color: white
 
 .project-title{
     font-weight: 700;
